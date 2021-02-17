@@ -10,82 +10,176 @@ alert('You can use [yes,no,y and n] and you can capitalize them of you want!');
 
 let score=0;
 
-let aeroEng = prompt('The first question: Is Shady Enginner?','yes/no,y/n');
-aeroEng=aeroEng.toLocaleLowerCase();
 
-
-if (aeroEng === 'yes' || aeroEng === 'y') {
-  alert('Yes \''+ userName + '\' your answer is correct, Shady is an Aeronautical Engineer.');
-  score= score +1;
-  //console.log('Answer for Q1: yes \'',userName,'\' your answer is correct, Shady is an Aeronautical Engineer.');
-} else if (aeroEng === 'n' || aeroEng === 'no') {
-  alert('Sorry \''+ userName + '\' your answer is wrong, Shady is an Aeronautical Engineer.');
-  //console.log('Answer for Q1: no \'',userName,'\' your answer is wrong, Shady is an Aeronautical Engineer.');
-} else{
-  alert('Sorry, you do not follow the instruction.');
+function aeroEng(){
+  let aeroEng = prompt('The first question: Is Shady Enginner?','yes/no,y/n');
+  if (aeroEng === 'yes' || aeroEng === 'y') {
+    alert('Yes \''+ userName + '\' your answer is correct, Shady is an Aeronautical Engineer.');
+    score= score +1;
+    //console.log('Answer for Q1: yes \'',userName,'\' your answer is correct, Shady is an Aeronautical Engineer.');
+  } else if (aeroEng === 'n' || aeroEng === 'no') {
+    alert('Sorry \''+ userName + '\' your answer is wrong, Shady is an Aeronautical Engineer.');
+    //console.log('Answer for Q1: no \'',userName,'\' your answer is wrong, Shady is an Aeronautical Engineer.');
+  } else{
+    alert('Sorry, you do not follow the instruction.');
+  }
 }
+aeroEng();
 
-let uni = prompt('The second question: Did Shady study in The University of Jordan ?','yes/no,y/n');
-uni=uni.toLocaleLowerCase();
 
-//while (uni !== 'yes' && uni !== 'y' && uni !== 'n' && uni !== 'no' && !aeroEng) {
-//  uni = prompt('The first question: Is Shady Enginner?','yes/no,y/n');
-//}
-if (uni === 'yes' || uni === 'y') {
+// let aeroEng = prompt('The first question: Is Shady Enginner?','yes/no,y/n');
+// aeroEng=aeroEng.toLocaleLowerCase();
+
+
+// if (aeroEng === 'yes' || aeroEng === 'y') {
+//   alert('Yes \''+ userName + '\' your answer is correct, Shady is an Aeronautical Engineer.');
+//   score= score +1;
+//   //console.log('Answer for Q1: yes \'',userName,'\' your answer is correct, Shady is an Aeronautical Engineer.');
+// } else if (aeroEng === 'n' || aeroEng === 'no') {
+//   alert('Sorry \''+ userName + '\' your answer is wrong, Shady is an Aeronautical Engineer.');
+//   //console.log('Answer for Q1: no \'',userName,'\' your answer is wrong, Shady is an Aeronautical Engineer.');
+// } else{
+//   alert('Sorry, you do not follow the instruction.');
+// }
+
+
+
+function uni(){
+  let uni = prompt('The second question: Did Shady study in The University of Jordan ?','yes/no,y/n');
+  uni=uni.toLocaleLowerCase();
+
+  if (uni === 'yes' || uni === 'y') {
   alert('Sorry \''+ userName + '\' your answer is wrong, Shady did not study in The University of Jordan');
-  //console.log('Answer for Q2: yes \'',userName,'\' your answer is wrong, Shady did not study in The University of Jordan');
-} else if (uni === 'n' || uni === 'no') {
+  } else if (uni === 'n' || uni === 'no') {
   alert('Yes \''+ userName + '\' your answer is correct, Shady did not study in The University of Jordan');
-  //console.log('Answer for Q2: no \'',userName,'\' your answer is correct, Shady did not study in The University of Jordan');
   score= score +1;
-} else{
+  } else{
   alert('Sorry, you do not follow the instruction.');
 }
+}
+uni ();
 
-let hobby = prompt('The third question: Is the drawing one of Shady\'s hoppies ?','yes/no,y/n');
-hobby=hobby.toLocaleLowerCase();
+// let uni = prompt('The second question: Did Shady study in The University of Jordan ?','yes/no,y/n');
+// uni=uni.toLocaleLowerCase();
+
+// //while (uni !== 'yes' && uni !== 'y' && uni !== 'n' && uni !== 'no' && !aeroEng) {
+// //  uni = prompt('The first question: Is Shady Enginner?','yes/no,y/n');
+// //}
+// if (uni === 'yes' || uni === 'y') {
+//   alert('Sorry \''+ userName + '\' your answer is wrong, Shady did not study in The University of Jordan');
+//   //console.log('Answer for Q2: yes \'',userName,'\' your answer is wrong, Shady did not study in The University of Jordan');
+// } else if (uni === 'n' || uni === 'no') {
+//   alert('Yes \''+ userName + '\' your answer is correct, Shady did not study in The University of Jordan');
+//   //console.log('Answer for Q2: no \'',userName,'\' your answer is correct, Shady did not study in The University of Jordan');
+//   score= score +1;
+// } else{
+//   alert('Sorry, you do not follow the instruction.');
+// }
 
 
-if (hobby === 'yes' || hobby === 'y') {
+
+function hoppy(){
+  let hobby = prompt('The third question: Is the drawing one of Shady\'s hoppies ?','yes/no,y/n');
+  hobby=hobby.toLocaleLowerCase();
+
+
+  if (hobby === 'yes' || hobby === 'y') {
   alert('Sorry \''+ userName + '\' your answer is wrong, drawing is not one of Shady\'s hoppies');
-  //console.log('Answer for Q3: yes \'',userName,'\' your answer is wrong, S drawing is not one of Shady\'s hoppies');
-} else if (hobby === 'n' || hobby === 'no') {
+  } else if (hobby === 'n' || hobby === 'no') {
   alert('Yes \''+ userName + '\' your answer is correct, drawing is not one of Shady\'s hoppies');
-  //console.log('Answer for Q3: no \'',userName,'\' your answer is correct,  drawing is not one of Shady\'s hoppies');
   score= score +1;
-} else{
+  } else{
   alert('Sorry, you do not follow the instruction.');
-}
+  }
 
-let anime = prompt('The fourth question: Does Shady watch Anime ?','yes/no,y/n');
+}
+hoppy ();
+
+
+// let hobby = prompt('The third question: Is the drawing one of Shady\'s hoppies ?','yes/no,y/n');
+// hobby=hobby.toLocaleLowerCase();
+
+
+// if (hobby === 'yes' || hobby === 'y') {
+//   alert('Sorry \''+ userName + '\' your answer is wrong, drawing is not one of Shady\'s hoppies');
+//   //console.log('Answer for Q3: yes \'',userName,'\' your answer is wrong, S drawing is not one of Shady\'s hoppies');
+// } else if (hobby === 'n' || hobby === 'no') {
+//   alert('Yes \''+ userName + '\' your answer is correct, drawing is not one of Shady\'s hoppies');
+//   //console.log('Answer for Q3: no \'',userName,'\' your answer is correct,  drawing is not one of Shady\'s hoppies');
+//   score= score +1;
+// } else{
+//   alert('Sorry, you do not follow the instruction.');
+// }
+
+
+
+function anime () {
+  let anime = prompt('The fourth question: Does Shady watch Anime ?','yes/no,y/n');
 anime=anime.toLocaleLowerCase();
 
 
 if (anime === 'yes' || anime === 'y') {
   alert('Yes \''+ userName + '\' your answer is correct, Shady watchs Anime');
-  //console.log('Answer for Q4: yes \'',userName,'\' your answer is correct, Shady watchs Anime');
   score= score +1;
-} else if (anime === 'n' || anime === 'no') {
+  } else if (anime === 'n' || anime === 'no') {
   alert('Sorry \''+ userName + '\' your answer is wrong, Shady watchs Anime');
-  //console.log('Answer for Q4: no \'',userName,'\' your answer is wrong, Shady watchs Anime');
-} else{
+  } else{
   alert('Sorry, you do not follow the instruction.');
+  }
+
 }
 
-let custSuppAdv = prompt('The last question: Does Shady work as a customer support advisor ?','yes/no,y/n');
+anime();
+
+// let anime = prompt('The fourth question: Does Shady watch Anime ?','yes/no,y/n');
+// anime=anime.toLocaleLowerCase();
+
+
+// if (anime === 'yes' || anime === 'y') {
+//   alert('Yes \''+ userName + '\' your answer is correct, Shady watchs Anime');
+//   //console.log('Answer for Q4: yes \'',userName,'\' your answer is correct, Shady watchs Anime');
+//   score= score +1;
+// } else if (anime === 'n' || anime === 'no') {
+//   alert('Sorry \''+ userName + '\' your answer is wrong, Shady watchs Anime');
+//   //console.log('Answer for Q4: no \'',userName,'\' your answer is wrong, Shady watchs Anime');
+// } else{
+//   alert('Sorry, you do not follow the instruction.');
+// }
+
+
+function custSuppAdv (){
+  let custSuppAdv = prompt('The last question: Does Shady work as a customer support advisor ?','yes/no,y/n');
 custSuppAdv=custSuppAdv.toLocaleLowerCase();
 
 
 if (custSuppAdv === 'yes' || custSuppAdv === 'y') {
   alert('Yes \''+ userName + '\' your answer is correct, Shady works as a customer support advisor');
-  //console.log('Answer for Q5: yes \'',userName,'\' your answer is correct, Shady works as a customer support advisor');
   score= score +1;
 } else if (custSuppAdv === 'n' || custSuppAdv === 'no') {
   alert('Sorry \''+ userName + '\' your answer is wrong, Shady works as a customer support advisor');
-  //console.log('Answer for Q5: no \'',userName,'\' your answer is wrong, Shady works as a customer support advisor');
-} else{
+  } else{
   alert('Sorry, you do not follow the instruction.');
+  }
+
+  alert('Now we will play guessing game, press ok to play!');
 }
+
+custSuppAdv();
+
+// let custSuppAdv = prompt('The last question: Does Shady work as a customer support advisor ?','yes/no,y/n');
+// custSuppAdv=custSuppAdv.toLocaleLowerCase();
+
+
+// if (custSuppAdv === 'yes' || custSuppAdv === 'y') {
+//   alert('Yes \''+ userName + '\' your answer is correct, Shady works as a customer support advisor');
+//   //console.log('Answer for Q5: yes \'',userName,'\' your answer is correct, Shady works as a customer support advisor');
+//   score= score +1;
+// } else if (custSuppAdv === 'n' || custSuppAdv === 'no') {
+//   alert('Sorry \''+ userName + '\' your answer is wrong, Shady works as a customer support advisor');
+//   //console.log('Answer for Q5: no \'',userName,'\' your answer is wrong, Shady works as a customer support advisor');
+// } else{
+//   alert('Sorry, you do not follow the instruction.');
+// }
 
 alert('Now we will play guessing game, press ok to play!');
 

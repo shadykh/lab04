@@ -181,15 +181,24 @@ if (custSuppAdv === 'yes' || custSuppAdv === 'y') {
 //   alert('Sorry, you do not follow the instruction.');
 // }
 
-function fiveInOne(){
-  aeroEng();
-  uni();
-  hoppy();
-  anime();
-  custSuppAdv();
+
+// function fiveInOne(){
+//   aeroEng();
+//   uni();
+//   hoppy();
+//   anime();
+//   custSuppAdv();
   
+// }
+
+function fiveInOne(num){
+  let Ques=[aeroEng(),uni(),hoppy(),anime(),custSuppAdv()];
+  Ques[num];
 }
 
+for (let j=0;j<5;j++){
+  fiveInOne(j);
+} 
 
 
 alert('Now we will play guessing game, press ok to play!');

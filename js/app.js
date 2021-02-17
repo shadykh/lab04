@@ -24,7 +24,7 @@ function aeroEng(){
     alert('Sorry, you do not follow the instruction.');
   }
 }
-aeroEng();
+// aeroEng();
 
 
 // let aeroEng = prompt('The first question: Is Shady Enginner?','yes/no,y/n');
@@ -57,7 +57,7 @@ function uni(){
   alert('Sorry, you do not follow the instruction.');
 }
 }
-uni ();
+// uni ();
 
 // let uni = prompt('The second question: Did Shady study in The University of Jordan ?','yes/no,y/n');
 // uni=uni.toLocaleLowerCase();
@@ -93,7 +93,7 @@ function hoppy(){
   }
 
 }
-hoppy ();
+// hoppy ();
 
 
 // let hobby = prompt('The third question: Is the drawing one of Shady\'s hoppies ?','yes/no,y/n');
@@ -129,7 +129,7 @@ if (anime === 'yes' || anime === 'y') {
 
 }
 
-anime();
+// anime();
 
 // let anime = prompt('The fourth question: Does Shady watch Anime ?','yes/no,y/n');
 // anime=anime.toLocaleLowerCase();
@@ -164,7 +164,7 @@ if (custSuppAdv === 'yes' || custSuppAdv === 'y') {
   alert('Now we will play guessing game, press ok to play!');
 }
 
-custSuppAdv();
+// custSuppAdv();
 
 // let custSuppAdv = prompt('The last question: Does Shady work as a customer support advisor ?','yes/no,y/n');
 // custSuppAdv=custSuppAdv.toLocaleLowerCase();
@@ -180,6 +180,17 @@ custSuppAdv();
 // } else{
 //   alert('Sorry, you do not follow the instruction.');
 // }
+
+function fiveInOne(){
+  aeroEng();
+  uni();
+  hoppy();
+  anime();
+  custSuppAdv();
+  
+}
+
+
 
 alert('Now we will play guessing game, press ok to play!');
 
@@ -205,6 +216,7 @@ if (i === 3){
   alert('Sorry, you run out if attempts');
   //console.log('I asked about guessing number but you did not answer!');
 }
+
 
 
 
